@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@200;300&family=Poppins:wght@200;300;500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cont-header{
+    background: linear-gradient(to right, #fdf6f6, #fdeaeb, #f3eafe, #faf4f9, #fefdfe);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.img-thumbnail{
+    width: 150px;
+    height: 150px;
+}
+
+.content{
+    line-height: 33px;
+    
+}
+
+.judul-content{
+    font-size:larger;
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan simbol default dari daftar */
+    padding-left: 0; /* Menghapus padding kiri default */
+}
+
+li::before {
+    content: "- "; /* Menambahkan tanda "-" di depan setiap item */
+}
+
+/*desktop*/
+@media only screen and (min-width: 1200px) {
+
+    .nama-header{
+        padding-left: 150px;
+    }
+
+    .content{
+        text-align: justify;
+    }
+
+}
+
+/*mobile*/
+@media only screen and (max-width: 576px){
+
+    .img-thumbnail{
+        max-width: 125px;
+        max-height: 125px;
+        margin-left: 65px;
+        margin-bottom: 20px;
+    }
+
+    .nama-header{
+        padding-left: 50px;
+    }
+
+    .nama{
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    .paragraf-profil{
+        text-align: justify;
+    }
+
+    .pendidikan, .kontak{
+        margin-top: 35px;
+    }
+
+
+}
